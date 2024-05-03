@@ -1,0 +1,50 @@
+{% extends 'base.html' %}  
+
+{% block head %}  
+<title>Task master</title>
+{% endblock %}
+
+{% block body %}  
+<h1 id="task">Enter the following informations</h1>
+<br> <br>
+
+<form action="/" method="post">
+    <div  id="add">
+        <label for="AirTemperature">Air temperature</label>
+      <input type="text" name="AirTemperature" id="AirTemperature" class="form-control col-md-6">
+      <br><br>
+      <label for="ProcessTemperature">Process Temperature</label>
+      <input type="text" name="ProcessTemperature" id="ProcessTemperature" class="form-control col-md-6">
+        <br><br>
+      <label for="RotationalSpeed">Rotational Speed</label>
+      <input type="text" name="RotationalSpeed" id="RotationalSpeed" class="form-control col-md-6">
+<br><br>
+      <label for="SkinThickness">Torque</label>
+      <input type="text" name="Torque" id="Torque" class="form-control col-md-6">
+<br><br>
+      <label for="ToolWear">Tool wear</label>
+      <input type="text" name="ToolWear" id="ToolWear" class="form-control col-md-6">
+<br> <br>
+      <label for="TWF">TWF</label>
+      <input type="text" name="TWF" id="TWF" class="form-control col-md-6">
+<br><br>
+      <label for="HDF"> HDF</label>
+      <input type="text" name="HDF" id="HDF" class="form-control col-md-6">
+<br><br>
+      <label for="PWF">PWF</label>
+      <input type="text" name="PWF" id="PWF" class="form-control col-md-6">
+<br><br>
+<br><br>
+      <label for="OSF">OSF</label>
+      <input type="text" name="OSF" id="OSF" class="form-control col-md-6">
+<br><br>
+<br><br>
+      <label for="RNFF">RNF</label>
+      <input type="text" name="RNF" id="RNF" class="form-control col-md-6">
+<br><br>
+      <input type="submit" value="submit" class="btn btn-success" >
+      <br>
+      {{ result }}
+    </div>
+</form>
+{% endblock %}
