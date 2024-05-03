@@ -23,7 +23,8 @@ def index():
         RNF = float(request.form['RNF'])
 
         # Charger le dataset
-        data = pd.read_csv(r"C:\dataset\data.csv")
+        data = pd.read_csv(r"data.csv")
+       
 
         features = ['Air temperature [K]', 'Process temperature [K]',
                     'Rotational speed [rpm]', 'Torque [Nm]', 'Tool wear [min]',
